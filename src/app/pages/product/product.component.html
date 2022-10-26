@@ -1,0 +1,58 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+    
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt--7">
+  
+        <div class="card bg-secondary shadow border-0">
+    
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class="text-center text-muted mb-4">
+              <small>Add Product</small>
+            </div>
+            <form role="form" (ngSubmit)="addProduct(addProductForm)" #addProductForm="ngForm">
+              <div class="form-group">
+                <label for="">ProductName</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control"
+                  required
+                  placeholder="ProductName" type="text" name="ProductName" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">ProductDescription</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="ProductDescription" type="text" name="ProductDescription" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Attachments</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control"
+                  required
+                  placeholder="Attachments" type="text"  name="Attachments" ngModel>
+                </div>
+              </div>
+              
+       
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary my-4"[disabled]="addProductForm.invalid" >Add Customer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-3">
+  
+        </div>
+    
+  </div>
+  

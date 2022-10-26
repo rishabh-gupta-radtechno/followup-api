@@ -1,0 +1,130 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+    
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt--7">
+  
+        <div class="card bg-secondary shadow border-0">
+    
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class="text-center text-muted mb-4">
+              <small>Add Customer</small>
+            </div>
+            <form role="form" (ngSubmit)="addCustomer(addCustomerForm)" #addCustomerForm="ngForm">
+              <div class="form-group">
+                <label for="">FirstName</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control"
+                  required
+                  placeholder="FirstName" type="text" name="FirstName" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">LastName</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="LastName" type="text" name="LastName" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Phone</label>
+  
+                <div class="input-group input-group-alternative">
+                 
+                  <input class="form-control"
+                  required
+                  placeholder="Phone" type="text"  name="Phone" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+  
+                <div class="input-group input-group-alternative">
+                 
+                  <input class="form-control"
+                  required
+                  placeholder="Email" type="text" email name="Email" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">AddressLine1</label>
+  
+                <div class="input-group input-group-alternative">
+                 
+                  <input class="form-control" placeholder="AddressLine1" type="text" name="AddressLine1" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">AddressLine2</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="AddressLine2" type="text" name="AddressLine2" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">City</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="City" type="text" name="City" ngModel>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="">Country</label>
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="Country" type="text" name="Country" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">State</label>
+                <div class="input-group input-group-alternative">
+                 
+                  <input class="form-control" placeholder="State" type="text" name="State" ngModel>
+                </div>
+              </div>
+             
+              <div class="form-group">
+                <label for="">Pincode</label>
+                <div class="input-group input-group-alternative">
+               
+                  <input class="form-control" placeholder="Pincode" type="text" name="Pincode" ngModel>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="">IsEnabled</label>
+                <div class="input-group input-group-alternative"> -->
+                  <!-- <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                  </div> -->
+                  <!-- <input class="form-control" type="checkbox" name="IsEnabled" ngModel>
+                </div>
+              </div> -->
+              <!-- <div></div> -->
+              <!-- <div  class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                    <label class="form-check-label form-control" name="IsEnabled">Enable</label>
+                  </div>   
+                         </div> -->
+       
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary my-4"[disabled]="addCustomerForm.invalid" >Add Customer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-3">
+  
+        </div>
+    
+  </div>
+  

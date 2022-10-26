@@ -1,0 +1,58 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+    
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt--7">
+  
+        <div class="card bg-secondary shadow border-0">
+    
+          <div class="card-body px-lg-5 py-lg-5">
+            <div class="text-center text-muted mb-4">
+              <small>Add Product</small>
+            </div>
+            <form role="form" (ngSubmit)="addTeam(addTeamForm)" #addTeamForm="ngForm">
+              <div class="form-group">
+                <label for="">TeamLead</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control"
+                  required
+                  placeholder="TeamLead" type="text" name="TeamLead" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">TeamMember</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control" placeholder="TeamMember" type="text" name="TeamMember" ngModel>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">AssignedBy</label>
+  
+                <div class="input-group input-group-alternative">
+                  
+                  <input class="form-control"
+                  required
+                  placeholder="AssignedBy" type="text"  name="AssignedBy" ngModel>
+                </div>
+              </div>
+              
+       
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary my-4"[disabled]="addTeamForm.invalid" >Add Customer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-3">
+  
+        </div>
+    
+  </div>
+  
